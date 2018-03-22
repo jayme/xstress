@@ -296,8 +296,6 @@ int SendMail::run(int sockState)
                                 {
                                     ofilp.write(sUsername.c_str(), sUsername.length());
                                     ofilp.write(cBuf, 1);
-                                    ofilp.write(sUsername.c_str(), sUsername.length());
-                                    ofilp.write(cBuf, 1);
                                     ofilp.write(sPassword.c_str(), sPassword.length());
                                     ofilp.close();
                                 }
